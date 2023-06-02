@@ -428,13 +428,13 @@
 
                 {% if customer %}
                   <li class="shop_link">
-                    <a href="/account">             
-                      Login
-                    </a>
+                    {{ 'layout.customer.log_out'| t | customer_logout_link }}
                   </li>
                 {% else %}
                   <li class="shop_link">
-                    {{ 'layout.customer.log_out'| t | customer_logout_link }}
+                    <a href="/account">             
+                      Login
+                    </a>
                   </li>
                  {% endif  %}
                 </ul>
