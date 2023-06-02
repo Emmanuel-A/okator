@@ -1,0 +1,129 @@
+<div class="preloader"></div>
+
+<!-- /templates/page.liquid -->
+<div class="grid">
+  <div class="grid__item large--five-sixths push--large--one-twelfth">
+
+<!--     <header class="section-header text-center">
+      <h1>{{ page.title }}</h1>
+      <hr class="hr--small">
+    </header> -->
+
+    <div class="grid">
+      <div class="grid__item large--four-fifths push--large--one-tenth">
+        <div class="rte rte--nomargin rte--indented-images">
+          {{ page.content }}
+
+          <div class="breadcrumbs">
+            <span class="all-steps-wrapper">
+              <span class="step-wrapper active account-creation"><span class="number">1</span><span class="step">Account Creation</span></span> 
+              <span class="step-wrapper business-details"><span class="number">2</span><span class="step">Business Details</span></span> 
+              <span class="step-wrapper finish"><span class="number">3</span><span class="step">Finish</span></span>
+            </span>
+          </div>
+
+          <div class="form-vertical">
+          {% form 'create_customer' %}
+            {{ form.errors | default_errors }}
+            <input type="hidden" id="customer_tags" name="customer[tags]" value="Wholesale, Wholesale Customer"/>
+            <div class="account-creation">
+              <h2>Enter your full name and choose your business password</h2>
+              <div class="form">
+                <div class="field row">
+                  <label for="name">Your name</label>
+                  <input type="text" name="customer[first_name]" id="name" class="input-full" {% if form.first_name %}value="{{ form.first_name }}"{% endif %} autofocus required>
+                </div>
+                <div class="field row">
+                  <label for="email">Email</label>
+                  <input type="email" name="customer[email]" id="email" class="input-full{% if form.errors contains 'email' %} error{% endif %}" {% if form.email %} value="{{ form.email }}"{% endif %} autocorrect="off" autocapitalize="off" required>
+                </div>
+                <div class="field row">
+                  <label for="password">Password</label>
+                  <input type="password" name="customer[password]" id="password" class="password input-full{% if form.errors contains 'password' %} error{% endif %}" name="customer[password]" minlength="6" required> 
+                  <span class="show-password" onclick="showPassword(event)">{% include 'show-password-icon' %}</span>
+                  <span class="note">Passwords must consist of at least 6 characters</span>
+                </div>
+                <div class="field row">
+                  <label for="password-confirmation">Confirm password</label>
+                  <input type="password" name="customer[password]" id="password-confirmation" class="password input-full{% if form.errors contains 'password' %} error{% endif %}" minlength="6" required> 
+                  <span class="show-password" onclick="showPassword(event)">{% include 'show-password-icon' %}</span>
+                </div>
+                <div class="field row">
+                  <button class="button next-step btn btn--full">Next step</button> 
+                </div>
+                <div class="field row">
+                  <span class="note">By creating an account, you agree to Okator's <a href="">Conditions of Use</a> and <a href="">Privacy Notice</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="business-details">
+              <h2>Enter your business details</h2>
+              <p>Tell us about you and your business so that we can verify it. Please provide information per your official documents to get verified quicker.</p>
+              <hr>
+              <div class="form">
+                <h3>Contact information</h3>
+                <span class="field row">
+                  <label for="first-name">First name</label>
+                  <input type="text" name="customer[first_name]" id="first-name" class="input-full" {% if form.first_name %}value="{{ form.first_name }}"{% endif %} autofocus required>
+                </span>
+                <span class="field row">
+                   <label for="last-name">Last name</label>
+                    <input type="text" name="customer[last_name]" id="last-name" class="input-full" {% if form.last_name %}value="{{ form.last_name }}"{% endif %} required>
+                </span>
+                <hr>
+                <h3>Business information</h3>
+                <span class="field row">
+                  <label for="business-name">Business name</label>
+                  <input type="text" name="customer[note][Business Name]" id="business-name" class="input-full" required>
+                </span>
+                <span class="field row">
+                  <label for="business-type">Business type</label>
+                  <select id="business-type" name="customer[note][Business Type]" class="input-full">
+                    <option value="one">Business type one</option>
+                    <option value="two">Business type two</option>
+                    <option value="three">Business type three</option>
+                    <option value="four">Business type four</option>
+                  </select>
+                </span>
+                <span class="field row">
+                  <label for="business-phone">Business phone</label>
+                  <input type="text" name="customer[note][Business Phone]" id="business-phone" class="input-full" required>
+                </span>
+                <hr>
+                <h3>Business address</h3>
+<!--                 <p>Have multiple locations? Use the address shown on official documents like tax forms.</p>
+                <span class="field row"> -->
+                  <label for="address-one">Address line 1</label>
+                  <input type="text" name="customer[note][Address Line 1]" id="address-one" class="input-full" required> 
+                </span>
+                <span class="field row">
+                  <label for="address-two">Address line 2 (optional)</label>
+                  <input type="text" name="customer[note][Address Line 2]" id="address-two" class="input-full"> 
+                </span>
+                <span class="field row">
+                  <label for="city">City</label>
+                  <input type="text" name="customer[note][City]" id="city" class="input-full" required> 
+                </span>
+                <span class="field row">
+                  <label for="province">Province/Territory</label>
+                  <input type="text" name="customer[note][Province]" id="province" class="input-full required"> 
+                </span>
+                <span class="field row">
+                  <label for="postal-code">Postal code</label>
+                  <input type="text" name="customer[note][Postal Code]" id="postal-code" class="input-full" required> 
+                </span>
+                <hr>
+                <span class="field row">
+                  <p>Create business account</p>
+                  <span class="note">By creating an account, you agree to Okator's <a href="">Conditions of Use</a> and <a href="">Privacy Notice</a>. You are creating a business account on behalf of the organization named above and agree that you have authority to bind that organization.</span>
+                </span>
+              </div>
+              <input type="submit" value="Sign up" class="btn btn--full">              
+            </div>
+          {% endform %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
