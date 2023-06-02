@@ -384,12 +384,15 @@
                   {{ form | payment_button }}
                 {% endif %}
               </div>
-            
-            {% for tag in product.tags %}
-            	{% if tag contains 'wholesale' %}
-                	<a class="wholesale_inq" href="mailto:info@okatorofficial.com?subject=Disposable Oveil Inquiry" title="Wholesale Inquiry">Wholesale Inquiry</a>
-            	{% endif %}
-          	{% endfor %}
+
+            {% if customer.tags contains "Wholesale" %}
+            {% else %}
+              {% for tag in product.tags %}
+              	{% if tag contains 'wholesale' %}
+                  	<a class="wholesale_inq" href="mailto:info@okatorofficial.com?subject=Disposable Oveil Inquiry" title="Wholesale Inquiry">Wholesale Inquiry</a>
+              	{% endif %}
+            	{% endfor %}
+              {% endif  %}
             {% endform %}
 
           </div>
