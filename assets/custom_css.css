@@ -88,6 +88,12 @@ section.hc-reviews-overview {
     transform: rotate(90deg);
 }
 
+#shopify-section-footer {
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
 #rc_login {
   visibility: hidden;
 }
