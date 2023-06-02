@@ -356,7 +356,11 @@
               </div>
               <div class="nav_wrapper">
                 <ul class="nav">
-                  <li><a href="/pages/contact">Contact</a></li>
+                  {% if customer.tags contains "Wholseale" %}
+                    <li><a href="/pages/contact">Contact</a></li>
+                  {% else %}
+                    <li><a href="/pages/blog">Blog</a></li>
+                  {% endif %}
                   {% if customer %}
                     <li class="shop_link">
                       {{ 'layout.customer.log_out'| t | customer_logout_link }}
