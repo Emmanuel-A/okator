@@ -88,6 +88,13 @@ section.hc-reviews-overview {
     transform: rotate(90deg);
 }
 
+#buy-on-amazon .main-content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #shopify-section-footer {
     display: block;
     width: 100%;
