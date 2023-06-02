@@ -31,6 +31,11 @@
       <li><a href="/pages/contact" title="Contact us">Contact us</a></li>
       <li><a href="/pages/delivery" title="Delivery and Returns">Delivery and Exchange</a></li>
       <li><a href="/pages/faqs" title="FAQs">FAQs</a></li>
+      {% if customer %}
+        <li>{{ 'layout.customer.log_out'| t | customer_logout_link }}</li>
+      {% else %}
+        <li><a href="/account">Login</a></li>
+     {% endif  %}
     </ul>
   </div>
   <div class="social dropdown_wrapper">
