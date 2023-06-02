@@ -15,7 +15,8 @@
   {% paginate customer.orders by 20 %}
 
   <header class="section-header text-center">
-<!--     {% if customer.tags contains 'wholesale' %}{% else %}{% endif %} -->
+    {% comment %}{% if customer.tags contains 'wholesale' %}{% else %}{% endif %}{% endcomment %}
+    
     <h1>Account Information</h1>
     {% comment %}{{ 'layout.customer.log_out'| t | customer_logout_link }}{% endcomment %}
   <!--   <hr class="hr--small"> -->
