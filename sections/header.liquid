@@ -357,14 +357,12 @@
               <div class="nav_wrapper">
                 <ul class="nav">
                   {% if customer %}
-                    <li><a href="/account">Account</a></li>
+                    <li><a href="/pages/contact">Contact</a></li>
                   {% else %}
                     <li><a href="/pages/blog">Blog</a></li>
                   {% endif %}
                   {% if customer %}
-                    <li class="shop_link">
-                      {{ 'layout.customer.log_out'| t | customer_logout_link }}
-                    </li>
+                    <li><a href="/account">Account</a></li>
                   {% else %}
                     <li class="shop_link">
                       <a href="/account">             
