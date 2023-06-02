@@ -94,6 +94,125 @@ section.hc-reviews-overview {
     justify-content: center;
     align-items: center;
 }
+#buy-on-amazon .page-container .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  	padding-top: 200px;
+  @media screen and (max-width: 670px) {
+  	padding-top: 80px;
+    padding-bottom: 10px;
+  }
+}
+#buy-on-amazon img.product--image {
+	width: 100%;
+}
+#buy-on-amazon .grid__item.grid-product span.new {
+	position: absolute;
+    left: 5%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0 10px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+body.template-index .new_wrapper {
+	width: 90% !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    margin: 30px 0 0 0;
+}
+body.template-index .show_desktop.disposable_product .overview {
+    margin: 120px 0 0 0;
+}
+body.template-index p.new {
+    background-color: #000000;
+    color: #ffffff !important;
+    padding: 0 10px;
+    font-family: sans-serif;
+    font-size: 14px !important;
+    font-weight: 500;
+  	width: 70px !important;
+}
+/* #buy-on-amazon .grid-product__meta {
+	padding: 0;
+} */
+#buy-on-amazon .amazon_btns {
+  	display: flex;
+  	flex-direction: column;
+    border-top: 1px solid #000000;
+    width: 155px;
+    padding: 10px 0 0 0;
+    margin: 10px auto;
+  span {
+  	font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+  }
+}
+#buy-on-amazon {
+  .amazon_btns {
+    @media screen and (max-width: 590px) {
+      margin-top: 10px;
+    }
+    a {
+      text-align: center;
+      text-transform: uppercase;
+      margin: 10px auto;
+      margin-top: 0;
+      padding: 6px 0;
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      border: 1px solid;
+      width: 150px;
+      &:hover {
+        cursor: pointer;
+        background-color: #000000;
+        color: #ffffff;
+      }
+      &.grid-product__meta {
+        display: none;
+      }
+    }
+  }
+}
+#buy-on-amazon .grid-product__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 1.1em;
+}
+#buy-on-amazon .grid-product__title b {
+	font-weight: 600;
+}
+#buy-on-amazon .grid-collage .grid-product__image-link {
+	height: auto;
+}
+@media screen and (max-width: 590px) {
+  #buy-on-amazon .page-container .main-content {
+	height: auto;
+  }
+  #buy-on-amazon .product--wrapper {
+    margin: 10px auto;
+  }
+  #buy-on-amazon .grid-product__meta {
+	padding: 0;
+    line-height: 20px;
+  }
+  #buy-on-amazon .grid-product__title {
+  	font-size: 0.9em;
+  }
+  #buy-on-amazon .grid.grid-collage {
+  	display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  #buy-on-amazon .grid__item.grid-product span.new {
+    font-size: 11px;
+}
 
 #shopify-section-footer {
     display: block;
