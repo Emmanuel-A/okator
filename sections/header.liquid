@@ -333,6 +333,20 @@
                       </a>
                     </li>
                   {% endif %}
+
+                  {% if customer.tags contains "Wholesale" %}
+                    <li class="shop_link">
+                      <a href="/pages/wholesale">
+                        Wholesale
+                      </a>
+                    </li>
+                  {% else %}
+                    <li class="shop_link">
+                      <a href="/pages/about">
+                        About
+                      </a>
+                    </li>
+                  {% endif %}
                 </ul>
               </div>
               <div class="logo">
