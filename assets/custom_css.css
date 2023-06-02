@@ -80,7 +80,13 @@ section.hc-reviews-overview {
     padding: 0 0 0 1rem;
 }
 
-
+.single-option-radio label.disabled:before {
+  -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
 
 #rc_login {
   visibility: hidden;
