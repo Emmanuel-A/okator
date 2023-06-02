@@ -36,7 +36,7 @@ body#disposable-makeup-covers .product-single__meta--wrapper {
 }
 
 @media screen and (min-width: 1080px){
-  .product-single {
+  .grid.product-single {
     display: flex;
     flex-direction: row;
   }
