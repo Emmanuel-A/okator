@@ -1,6 +1,9 @@
 <div class="preloader"></div>
 
 {% if customer  %}
+  
+{% else %}
+
 {% include 'accounts-sidebar' %}
 
 <div class="content">
@@ -76,6 +79,5 @@
 {% endif %}
 {% endpaginate %}
 
-{% else %}
 
 {% endif %}
