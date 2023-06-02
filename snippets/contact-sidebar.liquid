@@ -4,5 +4,12 @@
     <li><a href="/pages/about">About</a></li>
     <li><a href="/pages/delivery">Delivery and Exchange</a></li>
     <li><a href="/pages/faqs">FAQ</a></li>
+    {% if customer %}
+      <li>
+        {{ 'layout.customer.log_out'| t | customer_logout_link }}
+      </li>
+    {% else %}
+      <li><a href="/account">Login</a></li>
+    {% endif  %}
   </ul>
 </div>
