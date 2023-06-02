@@ -38,7 +38,15 @@ body#disposable-makeup-covers .product-single__meta--wrapper {
 @media screen and (min-width: 1080px){
   .grid.product-single {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+  }
+  .product-media-wrapper {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    height: 70vh;
   }
 }
 
