@@ -343,7 +343,17 @@
               <div class="nav_wrapper">
                 <ul class="nav">
                   <li><a href="/pages/about">About</a></li>
-                  <li><a href="/pages/contact">Contact</a></li>
+                  {% if customer %}
+                    <li class="shop_link">
+                      {{ 'layout.customer.log_out'| t | customer_logout_link }}
+                    </li>
+                  {% else %}
+                    <li class="shop_link">
+                      <a href="/account">             
+                        Login
+                      </a>
+                    </li>
+                  {% endif  %}
                   <li class="shop_link">
                     <div class="site-nav--mobile text-right">
                       <a href="{{ routes.cart_url }}" class="site-nav__link cart-link js-drawer-open-button-right" aria-controls="CartDrawer">
