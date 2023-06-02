@@ -329,11 +329,19 @@
                       </a>
                     </div>
                   </li>
-                  <li class="shop_link">
-                    <a href="/collections/okator">
-                      Shop
-                    </a>
-                  </li>
+                  {% if customer %}
+                    <li class="shop_link">
+                      <a href="/collections/okator">
+                        Shop
+                      </a>
+                    </li>
+                  {% else %}
+                    <li class="shop_link">
+                      <a href="/collections/okator">
+                        Shop
+                      </a>
+                    </li>
+                  {% endif %}
                   {% if customer %}
                   <li class="shop_link">
                     {{ 'layout.customer.log_out'| t | customer_logout_link }}
