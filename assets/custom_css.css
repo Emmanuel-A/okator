@@ -79,3 +79,9 @@ section.hc-reviews-overview {
 	text-align: left !important;
     padding: 0 0 0 1rem;
 }
+
+
+
+#rc_login {
+  display: none;
+}
