@@ -385,14 +385,13 @@
                 {% endif %}
               </div>
 
-            {% if customer.tags contains "Wholesale" %}
-            {% else %}
+            {% unless customer.tags contains "Wholesale" %}
               {% for tag in product.tags %}
               	{% if tag contains 'wholesale' %}
                   	<a class="wholesale_inq" href="mailto:info@okatorofficial.com?subject=Disposable Oveil Inquiry" title="Wholesale Inquiry">Wholesale Inquiry</a>
               	{% endif %}
             	{% endfor %}
-              {% endif  %}
+              {% endunless  %}
             {% endform %}
 
           </div>
