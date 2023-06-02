@@ -1,0 +1,53 @@
+<div class="profile_banner">
+  <div class="row">
+    <div class="profile_image" style="background: url('{{ section.settings.image | img_url: '2800x2800' }}') no-repeat">
+    </div>
+    <div class="profile_bio">
+      <h1>{{section.settings.title}}</h1>
+      <h2>{{section.settings.subtitle}}</h2>
+      <p>{{section.settings.bio}}</p>
+      <a href="{{section.settings.page_link}}">{{section.settings.link_text}}</a>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Blog Post ",
+	"settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Post Image"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Bold, Confident, Genuine, Extraordinary"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Sub Title",
+        "default": "On-the-go glow in 30 seconds like."
+      },
+	  {
+        "type": "textarea",
+        "id": "bio",
+        "label": "Bio",
+        "default": "I was tired of stretching out the collars of my clothes, and having to use old t-shirts, headscarves and towels, to prevent makeup from staining my clothes."
+      },
+	  {
+        "type": "text",
+        "id": "link_text",
+        "label": "Page Link Text",
+		"default": "Read more"
+      },
+      {
+        "type": "url",
+        "id": "page_link",
+        "label": "Page Link"
+      }
+    ]
+  }
+{% endschema %}

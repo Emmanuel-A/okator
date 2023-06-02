@@ -1,0 +1,53 @@
+<div class="preloader"></div>
+
+<!-- /templates/customers/register.liquid -->
+
+<div class="grid">
+
+  <div class="grid__item large--one-third push--large--one-third text-center">
+
+    <header class="section-header">
+      <h1>Sign up</h1>
+      <hr class="hr--small">
+    </header>
+
+    <div class="form-vertical">
+      {% form 'create_customer' %}
+
+        {{ form.errors | default_errors }}
+
+        <div class="field-row">
+          <label for="FirstName" class="hidden-label">{{ 'customer.register.first_name' | t }}</label>
+          <input type="text" name="customer[first_name]" id="FirstName" class="input-full" placeholder="{{ 'customer.register.first_name' | t }}" {% if form.first_name %}value="{{ form.first_name }}"{% endif %} autocapitalize="words" autofocus required>
+        </div>
+      
+        <div class="field-row">
+          <label for="LastName" class="hidden-label">{{ 'customer.register.last_name' | t }}</label>
+          <input type="text" name="customer[last_name]" id="LastName" class="input-full" placeholder="{{ 'customer.register.last_name' | t }}" {% if form.last_name %}value="{{ form.last_name }}"{% endif %} autocapitalize="words">
+        </div>
+      
+        <div class="field-row">
+          <label for="Email" class="hidden-label">{{ 'customer.register.email' | t }}</label>
+          <input type="email" name="customer[email]" id="Email" class="input-full{% if form.errors contains 'email' %} error{% endif %}" placeholder="Email Address" {% if form.email %} value="{{ form.email }}"{% endif %} autocorrect="off" autocapitalize="off" required>
+        </div>
+      
+        <div class="field-row">
+          <label for="CreatePassword" class="hidden-label">{{ 'customer.register.password' | t }}</label>
+          <input type="password" name="customer[password]" id="CreatePassword" class="input-full{% if form.errors contains 'password' %} error{% endif %}" placeholder="{{ 'customer.register.password' | t }}" required>
+          <span class="show-password" onclick="showPassword(event)">{% include 'show-password-icon' %}</span>
+        </div>
+        
+        <div class="field-row">
+          <input type="submit" value="Sign up" class="btn btn--full">
+        </div>
+
+        <div class="field-row">
+        	<p>Already have an account?</p><a href="/account/login">Login</a>
+        </div>
+      
+      {% endform %}
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,28 @@
+<div class="preloader"></div>
+
+{% include 'accounts-sidebar' %}
+
+<div class="content">
+  <!-- /templates/customers/account.liquid -->
+  {% comment %}
+
+    For all available customer liquid tags:
+      - http://docs.shopify.com/themes/liquid-variables/customer
+
+  {% endcomment %}
+
+  <header class="section-header text-center">
+    <h1>Request an Exchange</h1>
+    {% comment %}{{ 'layout.customer.log_out'| t | customer_logout_link }}{% endcomment %}
+  <!--   <hr class="hr--small"> -->
+  </header>
+
+  <div class="grid">
+
+    <div class="grid__item medium-down--one-whole">
+
+      <p>{{ page.content}}</p>
+
+    </div>
+  </div>
+</div>

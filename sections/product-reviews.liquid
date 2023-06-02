@@ -1,0 +1,76 @@
+<div class="reviews">
+  <p class="heading">{{section.settings.heading}}</p>
+  <div class="reviews_wrap for_slick_slider one-time">
+    {% for block in section.blocks %}
+      <div class="block">
+        <span class="stars_wrap">
+          {% if block.settings.stars == '1' %}
+          <img class="stars" src="https://cdn.shopify.com/s/files/1/0284/3580/8338/files/star.png?v=1600475104">
+          {% endif %}
+          {% if block.settings.stars == '2' %}
+          <img class="stars" src="https://cdn.shopify.com/s/files/1/0284/3580/8338/files/star.png?v=1600475104">
+          <img class="stars" src="https://cdn.shopify.com/s/files/1/0284/3580/8338/files/star.png?v=1600475104">      
+          {% endif %}
+          {% if block.settings.stars == '3' %}
+          <img class="stars" src="https://cdn.shopify.com/s/files/1/0284/3580/8338/files/star.png?v=1600475104">
+          <img class="stars" src="https://cdn.shopify.com/s/files/1/0284/3580/8338/files/star.png?v=1600475104">
+          <img class="stars" src="https://cdn.shopify.com/s/files/1/0284/3580/8338/files/star.png?v=1600475104">
+          {% endif %}
+          {% if block.settings.stars == '4' %}
+          <img class="stars" src="https://cdn.shopify.com/s/files/1/0284/3580/8338/files/star.png?v=1600475104">
+          <img class="stars" src="https://cdn.shopify.com/s/files/1/0284/3580/8338/files/star.png?v=1600475104">
+          <img class="stars" src="https://cdn.shopify.com/s/files/1/0284/3580/8338/files/star.png?v=1600475104">
+          <img class="stars" src="https://cdn.shopify.com/s/files/1/0284/3580/8338/files/star.png?v=1600475104">
+          {% endif %}
+          {% if block.settings.stars == '5' %}
+          <img class="stars" src="https://cdn.shopify.com/s/files/1/0284/3580/8338/files/star.png?v=1600475104">
+          <img class="stars" src="https://cdn.shopify.com/s/files/1/0284/3580/8338/files/star.png?v=1600475104">
+          <img class="stars" src="https://cdn.shopify.com/s/files/1/0284/3580/8338/files/star.png?v=1600475104">
+          <img class="stars" src="https://cdn.shopify.com/s/files/1/0284/3580/8338/files/star.png?v=1600475104">
+          <img class="stars" src="https://cdn.shopify.com/s/files/1/0284/3580/8338/files/star.png?v=1600475104">
+          {% endif %}
+        </span>
+        <p class="review">{{block.settings.review}}</p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Product Reviews",
+	"settings": [
+      {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "What our customers are saying!"
+      }
+	],
+    "blocks": [
+      {
+        "type": "review",
+        "name": "Review",
+        "settings": [
+		  {
+            "type": "text",
+            "id": "stars",
+            "label": "Number of stars",
+			"default": "5"
+          },
+		  {
+            "type": "text",
+            "id": "review",
+            "label": "Review",
+			"default": "I love this product! This seriously makes a busy girl on the go (with lots of makeup's) life SO much easier. Also saving my clothing and professionalism!"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

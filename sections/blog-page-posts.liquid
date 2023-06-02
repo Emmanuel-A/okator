@@ -1,0 +1,45 @@
+<div class="blog_post">
+  <div class="posts_wrapper">
+    {% for block in section.blocks %}
+      <a href="{{block.settings.post_link}}">
+        <img class="" src="{{ block.settings.image | img_url: '2800x2800' }}">
+          <p>{{block.settings.preview}}</p>
+      </a>
+    {% endfor %}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Blog Posts",
+    "blocks": [
+      {
+        "type": "post",
+        "name": "Posts",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+		  {
+            "type": "text",
+            "id": "preview",
+            "label": "Preview Text",
+			"default": "Bold, Confident, Genuine, Extraordinary"
+          },
+		  {
+            "type": "url",
+            "id": "post_link",
+            "label": "Button Link"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

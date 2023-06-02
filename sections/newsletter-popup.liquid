@@ -1,0 +1,71 @@
+<div class="popup_wrap" id="popup_wrap"></div>
+  <div class="newsletter_popup">
+    <div class="half_block image" style="background: url('{{ section.settings.image | img_url: '2800x2800' }}') no-repeat">
+<!--       <img src="{{ block.settings.image | img_url: '2800x2800' }}"> -->
+    </div>
+    <div class="half_block popup_info">
+      <div class="close_icon" id="close_icon">
+    	X
+      </div>
+      <div class="row"> 
+         <a href="/" title="OKATOR">
+           {% include 'icon_okator_logo_svg' %}
+        </a>
+      </div>
+      <div class="row">
+        <h1 class="title_one">{{ section.settings.headingone }}</h1>
+        <h2 class="title_two">{{ section.settings.headingtwo }}</h2>
+        <p class="content">{{ section.settings.content }}</p>
+        <div class="site-footer__newsletter">
+          <form class="my-form omnisend-subscribe-form" action="/subscribe" method="post">
+            <input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓">
+            <input type="hidden" name="contact[tags]" value="newsletter">
+            <div class="input-group ">
+              <input type="email" name="contact[email]" id="popup-email" class="omnisend-subscribe-input-email" value="" placeholder="Email Address" aria-label="Email address" aria-required="true" required autocorrect="off" autocapitalize="off">
+              <span class="input-group__btn">
+                <button type="submit" class="btn newsletter__submit" name="commit" id="popup-subscribe">
+                  <span class="newsletter__submit-text--large">Sign Up</span>
+                </button>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+<!--       <div class="row footer">
+        <div class="half_block copyright_wrap">
+          <p class="copyright">Copyright © 2020 OKATOR&trade;</p>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+{% schema %}
+  {
+    "name": "Newsletter Popup",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Newsletter Popup Image"
+      },
+	  {
+        "type": "text",
+        "id": "headingone",
+        "label": "Heading One",
+		"default": "Heading One"
+      },
+	  {
+        "type": "text",
+        "id": "headingtwo",
+        "label": "Heading Two",
+		"default": "Heading Two"
+      },
+	  {
+        "type": "text",
+        "id": "content",
+        "label": "Content",
+		"default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut elementum ex"
+      }
+	]
+  }
+{% endschema %}

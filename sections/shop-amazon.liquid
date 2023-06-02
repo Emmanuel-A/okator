@@ -1,0 +1,22 @@
+<div class="row">
+  <a href="{{ section.settings.page_link }}" class="page_link">{{ section.settings.link_text }}</a>
+</div>
+{% schema %}
+  {
+    "name": "Shop Amazon Banner",
+    "settings": [
+      {
+          "type": "text",
+          "id": "link_text",
+          "label": "Page Link Text",
+          "default": "Now Available On Amazon"
+        },
+        {
+          "type": "url",
+          "id": "page_link",
+          "label": "Page Link"
+        }
+     ]
+  }
+{% endschema %}
+

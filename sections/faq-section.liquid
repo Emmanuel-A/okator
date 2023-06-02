@@ -1,0 +1,38 @@
+<div class="grid">
+  <div class="grid__item large--four-fifths push--large--one-tenth">
+    <div class="rte rte--nomargin rte--indented-images">
+		{% for blocks in section.blocks %}
+      		<p>
+              	<strong>{{ block.sections.question }}</strong>
+      			<br>
+            	{{ block.sections.answer }}
+      		</p>
+    	{% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "FAQ",
+	"blocks": [
+		{
+			"type": "faq",
+			"name": "FAQ",
+			"settings": [
+				{
+					"id": "question",
+					"type": "text",
+					"label": "FAQ Question",
+					"default": "2. What colour is the Oveil? Does it come in different colours?"
+				},
+				{
+					"id": "answer",
+					"type": "richtext",
+					"label": "FAQ Answer"
+				}
+			]
+		}
+	]
+  }
+{% endschema %}

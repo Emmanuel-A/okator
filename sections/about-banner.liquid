@@ -1,0 +1,43 @@
+<div class="about_banner">
+  <a href="{{section.settings.banner_link}}">
+    <div class="" style="background: url('{{ section.settings.banner | img_url: '2800x2800' }}') no-repeat">
+      <h1>{{section.settings.title}}</h1>
+      <h2>{{section.settings.subtitle}}</h2>
+    </div>
+  </a>
+</div>
+{% schema %}
+  {
+    "name": "Profile Banner",
+	"settings": [
+      {
+        "type": "image_picker",
+        "id": "banner",
+        "label": "Banner Image"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Bold, Confident, Genuine, Extraordinary"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Sub Title",
+        "default": "On-the-go glow in 30 seconds like."
+      },
+      {
+        "type": "url",
+        "id": "banner_link",
+        "label": "Banner Link"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
