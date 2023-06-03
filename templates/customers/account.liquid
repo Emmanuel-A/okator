@@ -68,6 +68,14 @@
 
     <div class="grid__item one-third medium-down--one-whole">
       {{ customer.default_address | format_address }}
+<!-- Seal Subscriptions auto installation start -->
+{% if routes.root_url.last == "/" %}
+	<p><a href="{{ routes.root_url }}a/subscriptions/">Subscriptions</a></p>
+{% else %}
+	<p><a href="{{ routes.root_url }}/a/subscriptions/">Subscriptions</a></p>
+{% endif %}
+<!-- Seal Subscriptions auto installation end -->
+
     </div>
 
   </div>
