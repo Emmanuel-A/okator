@@ -124,23 +124,16 @@
         <div class="row desktop_nav">
             <div class="nav_wrapper">
               <ul class="nav">
-                
                 <li class="shop_link">
                   <a href="/collections/okator">
                     Shop
                   </a>
                 </li>
-                {% if customer %}
-                  <li class="shop_link">
-                    {{ 'Log out' | customer_logout_link }}
-                  </li>
-                {% else %}
-                  <li class="shop_link">
-                    <a href="/account">
-                      Login
-                    </a>
-                  </li>
-                {% endif  %}
+                <li class="shop_link">
+                  <a href="/pages/blog">
+                    Shop
+                  </a>
+                </li>
               </ul>
             </div>
             <div class="nav_wrapper">
