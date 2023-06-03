@@ -320,56 +320,6 @@
             <div class="row desktop_nav">
               <div class="nav_wrapper">
                 <ul class="nav">
-                  {% if customer.tags contains "Wholesale" %}
-                    <li class="shop_link">
-                      <a href="/products/oveil">
-                        Oveil
-                      </a>
-                    </li>
-                  {% else %}
-                    <li class="shop_link">
-                      <a href="/collections/okator">
-                        Shop
-                      </a>
-                    </li>
-                  {% endif %}
-
-                  {% if customer.tags contains "Wholesale" %}
-                    <li class="shop_link">
-                      <a href="/products/recyclable">
-                        Wholesale
-                      </a>
-                    </li>
-                  {% else %}
-                    <li class="shop_link">
-                      <a href="/pages/about">
-                        About
-                      </a>
-                    </li>
-                  {% endif %}
-                </ul>
-              </div>
-              <div class="logo">
-                <a href="/" title="OKATOR">
-                  	{% include 'icon_okator_logo_svg' %}
-                </a>
-              </div>
-              <div class="nav_wrapper">
-                <ul class="nav">
-                  {% if customer %}
-                    <li><a href="/pages/contact">Contact</a></li>
-                  {% else %}
-                    <li><a href="/pages/blog">Blog</a></li>
-                  {% endif %}
-                  {% if customer %}
-                    <li><a href="/account">Account</a></li>
-                  {% else %}
-                    <li class="shop_link">
-                      <a href="/account">             
-                        Login
-                      </a>
-                    </li>
-                  {% endif  %}
                   <li class="shop_link">
                     <div class="site-nav--mobile text-right">
                       <a href="{{ routes.cart_url }}" class="site-nav__link cart-link js-drawer-open-button-right" aria-controls="CartDrawer">
@@ -379,6 +329,56 @@
                       </a>
                     </div>
                   </li>
+                  <li class="shop_link">
+                    <a href="/collections/okator">
+                      Shop
+                    </a>
+                  </li>
+                  <li class="shop_link">
+                    <a href="/account">
+                      Login
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="logo">
+                <a href="/" title="OKATOR">
+                  	{% include 'icon_okator_logo_svg' %}
+                </a>
+              </div>
+              <div class="nav_wrapper">
+                <ul class="nav">
+                  <li class="blog_link">
+                    <a href="/pages/blog">
+                      Blog
+                    </a>
+                    {% comment %}{% if page.handle != 'blog' %}
+                      <div class="blog_drop">
+                        <div class="wrap">
+                          <div class="item">
+                            <a href="/pages/the-beauties-and-brains-behind-beyond-the-kit">
+                              <img src="https://cdn.shopify.com/s/files/1/0284/3580/8338/files/IMG_4881.jpg?v=1602818305">
+                              <p class="blog_title">The Beauty and Brains Behind "Beyond the Kit"</p>
+                            </a>
+                          </div> 
+                          <div class="item">
+                            <a href="/pages/how-to-keep-your-fall-staples-looking-fresh-year-after-year">
+                              <img src="https://cdn.shopify.com/s/files/1/0284/3580/8338/files/images.png?v=1602819493">
+                              <p class="blog_title">How to keep your Fall Staples Looking Fresh Year after Year</p>
+                            </a>
+                          </div>
+                          <div class="item">
+                            <a href="/pages/we-have-the-answers-to-your-questions">
+                              <img src="https://cdn.shopify.com/s/files/1/0284/3580/8338/files/Facetune_12-08-2020-17-24-10_c7846387-a036-442d-888b-0f925a2cecda.jpg?v=1603085978">
+                              <p class="blog_title">We have the Answers to your Questions!</p>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    {% endif %}{% endcomment %}
+                  </li>
+                  <li><a href="/pages/about">About</a></li>
+                  <li><a href="/pages/contact">Contact</a></li>
                 </ul>
               </div>
             </div>   
@@ -425,18 +425,11 @@
                   </li>
                   <li><a href="/pages/about">About</a></li>
                   <li><a href="/pages/contact">Contact</a></li>
-
-                {% if customer %}
                   <li class="shop_link">
-                    {{ 'layout.customer.log_out'| t | customer_logout_link }}
-                  </li>
-                {% else %}
-                  <li class="shop_link">
-                    <a href="/account">             
+                    <a href="/account">
                       Login
                     </a>
                   </li>
-                 {% endif  %}
                 </ul>
               </div>
             </div>
