@@ -139,6 +139,7 @@
       <div class="buybtn_wrap">
         <a href="{{ product.url | within: collection }}" class="">Buy Now</a>
   </div>
+    {% unless customer.tags contains 'Wholesale' %}
       {% for tag in product.tags %}
        	{% if tag contains 'oveil' %}
       		<div class="row amazon_btns">
@@ -155,5 +156,6 @@
       		</div>
         {% endif %}
       {% endfor %}
+    {% endunless %}
   </div>
 </div>
