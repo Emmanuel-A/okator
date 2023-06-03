@@ -121,6 +121,110 @@
 
       {% if customer.tags contains 'Wholesale' %}   
       <header class="site-header wholesale-header" role="banner"{% if section.settings.transparent_header_enable %} data-transparent-header="true"{% endif %}>
+        <div class="row desktop_nav">
+            <div class="nav_wrapper">
+              <ul class="nav">
+                <li class="shop_link">
+                  <div class="site-nav--mobile text-right">
+                    <a href="{{ routes.cart_url }}" class="site-nav__link cart-link js-drawer-open-button-right" aria-controls="CartDrawer">
+                      <span class="cart_counter" data-counter="{{ cart.item_count }}">{{ cart.item_count }}</span>
+                      <span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}"></span>
+                      <span class="icon icon-cart"></span> 
+                    </a>
+                  </div>
+                </li>
+                <li class="shop_link">
+                  <a href="/collections/okator">
+                    Shop
+                  </a>
+                </li>
+                {% if customer %}
+                  <li class="shop_link">
+                    {{ 'Log out' | customer_logout_link }}
+                  </li>
+                {% else %}
+                  <li class="shop_link">
+                    <a href="/account">
+                      Login
+                    </a>
+                  </li>
+                {% endif  %}
+              </ul>
+            </div>
+            <div class="logo">
+              <a href="/" title="OKATOR">
+                  {% include 'icon_okator_logo_svg' %}
+              </a>
+            </div>
+            <div class="nav_wrapper">
+              <ul class="nav">
+                <li class="blog_link">
+                  <a href="/pages/blog">
+                    Blog
+                  </a>
+                </li>
+                <li><a href="/pages/about">About</a></li>
+                <li><a href="/pages/contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>   
+             
+        
+          <div class="row mobile_nav">
+            <div class="logo">
+              <a href="/" title="OKATOR">
+                  {% include 'icon_okator_logo_svg' %}
+              </a>
+            </div>
+            <div class="btn_wraps">
+              <ul class="nav">
+                <li class="shop_link">
+                  <div class="site-nav--mobile text-right">
+                    <a href="{{ routes.cart_url }}" class="site-nav__link cart-link js-drawer-open-button-right" aria-controls="CartDrawer">
+                      <span class="cart_counter" data-counter="{{ cart.item_count }}">{{ cart.item_count }}</span>
+                      <span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}"></span>
+                      <span class="icon icon-cart"></span> 
+                    </a>
+                  </div>
+                </li>
+                <li class="menu">
+                  {% include 'menu-icon' %}
+                </li>
+                <li class="close">
+                  {% include 'icon-close' %}
+                </li>
+              </ul>
+            </div>
+          </div> 
+          <div class="mobile_drawer">
+            <div class="nav_wrapper">
+              <ul class="nav">  
+                <li class="shop_link">
+                  <a href="/collections/okator">
+                    Shop
+                  </a>
+                </li>
+                <li class="blog_link">
+                  <a href="/pages/blog">
+                    Blog
+                  </a>
+                </li>
+                <li><a href="/pages/about">About</a></li>
+                <li><a href="/pages/contact">Contact</a></li>
+                {% if customer %}
+                  <li class="shop_link">
+                    {{ 'Log out' | customer_logout_link }}
+                  </li>
+                {% else %}
+                  <li class="shop_link">
+                    <a href="/account">
+                      Login
+                    </a>
+                  </li>
+                {% endif  %}
+              </ul>
+            </div>
+          </div>
       </header>
       {% else  %}
       <header class="site-header" role="banner"{% if section.settings.transparent_header_enable %} data-transparent-header="true"{% endif %}>
