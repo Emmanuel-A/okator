@@ -12,7 +12,7 @@
   }
 }
 .row.additional-product-info .heading-wrap {
-  width: 150px;
+    min-width: 150px;
 }
 .row.additional-product-info h3.heading {
     font-size: 16px;
