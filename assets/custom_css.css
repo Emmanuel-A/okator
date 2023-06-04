@@ -52,7 +52,7 @@ body#disposable-makeup-covers .product-single__meta--wrapper {
     z-index: 2;
     /* width: 60%; */
     height: 70vh;
-    column-gap" 15px;
+    column-gap: 15px;
   }
   .product-info-wrapper {
     position: relative;
