@@ -43,7 +43,10 @@ body#disposable-makeup-covers .product-single__meta--wrapper {
     column-gap: 4%;
   }
   .product-media-wrapper {
-    display: block;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
     position: sticky;
     top: 100px;
     z-index: 2;
