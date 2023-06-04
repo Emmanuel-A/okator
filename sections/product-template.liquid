@@ -578,6 +578,11 @@
 <!--       <div class="video_reviews"></div> -->
     </div>
 </div>
+
+<div class="product_description">
+  {{ product.description }}
+</div>
+              
 {% unless product == empty %}
   <script type="application/json" id="ProductJson-{{ section.id }}">
     {{ product | json }}
