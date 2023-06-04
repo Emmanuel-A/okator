@@ -23,15 +23,12 @@ body#disposable-makeup-covers .hc-widget .hc-product-tabs.hc-product-tabs--boxed
     margin-top: 203px;
 }
 body#disposable-makeup-covers .product-single__meta--wrapper {
-    height: 140vh;
+    height: 100%;
 }
 @media only screen and (max-width: 1440px) {
   
   body#disposable-makeup-covers .hc-widget .hc-product-tabs.hc-product-tabs--boxed {
     margin-top: 295px;
-  }
-  body#disposable-makeup-covers .product-single__meta--wrapper {
-      height: 150vh;
   }
   body#oveil .product-single__meta--wrapper {
     height: 140vh;
