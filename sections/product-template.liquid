@@ -302,9 +302,9 @@
             {% capture "form_id" %}AddToCartForm--{{ section.id }}{%- endcapture %}
 
             {% form 'product', product, class:form_classes, id:form_id, data-product-form: '' %}
-<!-- Seal Subscriptions auto installation start -->
-{% render 'seal-subscriptions-plans', product: product %}
-<!-- Seal Subscriptions auto installation end -->
+              <!-- Seal Subscriptions auto installation start -->
+              <div class="sealsubs-target-element" data-product="{{ product | json | escape }}" data-handle="{{ product.handle }}"></div>
+              <!-- Seal Subscriptions auto installation end -->
 
               {% unless product.has_only_default_variant %}
                 {% for option in product.options_with_values %}
