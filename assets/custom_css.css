@@ -4,6 +4,12 @@
     border-bottom: 1px solid #ebebeb;
     padding: 20px 0;
 }
+.row.additional-product-info h3.heading {
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 0;
+}
+
 
 body#disposable-makeup-covers .hc-widget .hc-product-tabs.hc-product-tabs--boxed {
     margin-top: 203px;
