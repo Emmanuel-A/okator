@@ -33,7 +33,7 @@ body#disposable-makeup-covers .product-single__meta--wrapper {
       height: auto;
   }
   body#disposable-makeup-covers .product-single__meta--wrapper {
-      width: 100%;
+      padding-left: 15px;
   }
 }
 
