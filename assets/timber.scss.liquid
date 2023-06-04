@@ -3106,8 +3106,7 @@ $socialIconFontStack: 'icons';
 
 .product-single__photos,
 .product-single__thumbnails {
-  a,
-  img {
+  a {
     background-color: $colorProductBackground;
     display: block;
     margin: 0 auto;
@@ -3117,6 +3116,11 @@ $socialIconFontStack: 'icons';
     right: 0;
     width: 100%;
   }
+}
+
+.product-single__photos img {
+    position: relative;
+    width: 100%;
 }
 
 @include at-query ($max, $small) {
