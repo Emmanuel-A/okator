@@ -380,7 +380,7 @@
                     {% else %}
                       {{ 'products.product.sold_out' | t }}
                     {% endif %}
-                  </span> - {{ current_variant.price | money }}
+                  </span>
                 </button>
                 {% if section.settings.enable_payment_button %}
                   {{ form | payment_button }}
