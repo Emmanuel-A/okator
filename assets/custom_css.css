@@ -33,7 +33,7 @@ body#disposable-makeup-covers .product-single__meta--wrapper {
     margin-top: 295px;
   }
   body#oveil .product-single__meta--wrapper {
-    height: 140vh;
+    height: auto;
   }
     body#oveil .hc-widget .hc-product-tabs.hc-product-tabs--boxed {
     margin-top: 203px;
