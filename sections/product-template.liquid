@@ -380,7 +380,7 @@
                     {% else %}
                       {{ 'products.product.sold_out' | t }}
                     {% endif %}
-                  </span> - {{ product.selected_or_first_available_variant.price | money }}
+                  </span>
                 </button>
                 {% if section.settings.enable_payment_button %}
                   {{ form | payment_button }}
