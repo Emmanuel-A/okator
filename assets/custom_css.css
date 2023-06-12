@@ -1,3 +1,7 @@
+#seal-login-helper {
+  display: none;
+}
+
 .row.additional-product-info {
     display: flex;
     column-gap: 10px;
@@ -248,8 +252,4 @@ body.template-index p.new {
 
 #rc_login {
   visibility: hidden;
-}
-
-#seal-login-helper {
-  display: none;
 }
