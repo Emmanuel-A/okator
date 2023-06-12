@@ -249,3 +249,7 @@ body.template-index p.new {
 #rc_login {
   visibility: hidden;
 }
+
+#seal-login-helper {
+  display: none;
+}
