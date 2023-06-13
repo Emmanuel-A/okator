@@ -376,7 +376,7 @@
                 <button type="submit" name="add" id="AddToCart--{{ section.id }}" class="btn btn--add-to-cart{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}"{% unless current_variant.available %} disabled="disabled"{% endunless %}>
                   <span class="btn__text">
                     {% if current_variant.available %}
-                      {{ 'products.product.add_to_cart' | t }}
+                      {{ 'products.product.add_to_cart' | t }} - <span class="money conversion-bear-money">$25.50</span>
                     {% else %}
                       {{ 'products.product.sold_out' | t }}
                     {% endif %}
