@@ -401,6 +401,17 @@
       },
       "product-videos": {
         "type": "product-videos",
+        "blocks": {
+          "810ffebd-6975-49b0-8b7a-3240820ac8c0": {
+            "type": "video",
+            "settings": {
+              "video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0284\/3580\/8338\/files\/OKATOR_Oveil.mov?v=1600276713"
+            }
+          }
+        },
+        "block_order": [
+          "810ffebd-6975-49b0-8b7a-3240820ac8c0"
+        ],
         "settings": {
         }
       },
