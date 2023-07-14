@@ -1,7 +1,9 @@
 <div class="video_wrap">
-   <video class="product_video" width="60%" height="60%" poster="//cdn.shopify.com/s/files/1/0284/3580/8338/files/video_poster_01_2800x2800.png?v=1600380208"  autoplay="" playsinline="" loop="" muted="" >
-     <source src="https://cdn.shopify.com/s/files/1/0284/3580/8338/files/OKATOR_Oveil.mov?v=1600276713" type="video/mp4"> 
-  </video>
+  {% for block in section.blocks %}
+    <video class="product_video" width="60%" height="60%" poster="//cdn.shopify.com/s/files/1/0284/3580/8338/files/video_poster_01_2800x2800.png?v=1600380208"  autoplay="" playsinline="" loop="" muted="" >
+      <source src="{{ block.settings.video_link }}" type="video/mp4"> 
+    </video>
+  {% endfor %}
 </div>
 {% schema %}
   {
@@ -19,7 +21,8 @@
 		  {
             "type": "text",
             "id": "video_link",
-            "label": "Video Link"
+            "label": "Video Link",
+            "default": "https://cdn.shopify.com/s/files/1/0284/3580/8338/files/OKATOR_Oveil.mov?v=1600276713"
           }
         ]
       }
