@@ -493,7 +493,7 @@
         "type": "shop-amazon",
         "settings": {
           "link_text": "Now Available On Amazon",
-          "page_link": "shopify:\/\/collections\/okator"
+          "page_link": ""
         }
       }
     },
