@@ -1,18 +1,21 @@
-<div class="blog_post">
-  <p class="heading">{{ section.settings.heading }}</p>
-  <div class="posts_wrapper">
-    {% for block in section.blocks %}
-      <a href="{{block.settings.post_link}}">
-        <img class="" src="{{ block.settings.image | img_url: '2800x2800' }}">
-          <p>{{block.settings.preview}}</p>
-      </a>
-    {% endfor %}
+{% if section.settings.show == true %}
+  <div class="blog_post">
+    <p class="heading">{{ section.settings.heading }}</p>
+    <div class="posts_wrapper">
+      {% for block in section.blocks %}
+        <a href="{{block.settings.post_link}}">
+          <img class="" src="{{ block.settings.image | img_url: '2800x2800' }}">
+            <p>{{block.settings.preview}}</p>
+        </a>
+      {% endfor %}
+    </div>
   </div>
-</div>
+{% endif %}
 {% schema %}
   {
     "name": "Blog Posts",
 	"settings": [
+      
       {
           "type": "text",
           "id": "heading",
