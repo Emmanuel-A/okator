@@ -1,3 +1,4 @@
+{% if section.settings.show == true %}
 <div class="about_banner">
   <a href="{{section.settings.banner_link}}">
     <div class="" style="background: url('{{ section.settings.banner | img_url: '2800x2800' }}') no-repeat">
@@ -6,10 +7,17 @@
     </div>
   </a>
 </div>
+{% endif %}
 {% schema %}
   {
     "name": "Profile Banner",
 	"settings": [
+      {
+        "type": "checkbox",
+        "id": "show",
+        "label": "Show",
+        "default": true  
+      },
       {
         "type": "image_picker",
         "id": "banner",
