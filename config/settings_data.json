@@ -395,7 +395,7 @@
       "profile-banner": {
         "type": "profile-banner",
         "settings": {
-          "show": true,
+          "show": false,
           "banner": "shopify:\/\/shop_images\/profile_image.jpeg",
           "title": "Meet the Creator, Tara Ocansey",
           "subtitle": "",
