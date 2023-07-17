@@ -1,3 +1,4 @@
+{% if section.settings.show == true %}
 <div class="instructions">
   <p class="heading">{{ section.settings.heading }}</p>
   <div class="posts_wrapper">
@@ -9,10 +10,17 @@
     {% endfor %}
   </div>
 </div>
+{%  endif %}
 {% schema %}
   {
     "name": "Oveil Instructions",
 	"settings": [
+      {
+        "type": "checkbox",
+        "id": "show",
+        "label": "Show Section",
+        "default": true  
+      },
       {
           "type": "text",
           "id": "heading",
