@@ -249,7 +249,7 @@
           "1599698690379"
         ],
         "settings": {
-          "show": false,
+          "show": true,
           "heading": "Don't miss out on our latest content!"
         }
       },
@@ -395,7 +395,7 @@
       "profile-banner": {
         "type": "profile-banner",
         "settings": {
-          "show": false,
+          "show": true,
           "banner": "shopify:\/\/shop_images\/profile_image.jpeg",
           "title": "Meet the Creator, Tara Ocansey",
           "subtitle": "",
