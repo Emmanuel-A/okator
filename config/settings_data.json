@@ -211,6 +211,7 @@
           "1599696615198"
         ],
         "settings": {
+          "show": true
         }
       },
       "blog-posts": {
@@ -248,6 +249,7 @@
           "1599698690379"
         ],
         "settings": {
+          "show": false,
           "heading": "Don't miss out on our latest content!"
         }
       },
@@ -290,6 +292,7 @@
           "1599700489539"
         ],
         "settings": {
+          "show": true,
           "heading": "How to use the Oveil"
         }
       },
@@ -348,6 +351,7 @@
           "812ed377-d508-483f-8142-417d9d953468"
         ],
         "settings": {
+          "show": true,
           "heading": "What our customers are saying!"
         }
       },
@@ -391,6 +395,7 @@
       "profile-banner": {
         "type": "profile-banner",
         "settings": {
+          "show": true,
           "banner": "shopify:\/\/shop_images\/profile_image.jpeg",
           "title": "Meet the Creator, Tara Ocansey",
           "subtitle": "",
@@ -413,6 +418,7 @@
           "810ffebd-6975-49b0-8b7a-3240820ac8c0"
         ],
         "settings": {
+          "show": true
         }
       },
       "article-template": {
@@ -492,6 +498,7 @@
       "shop-amazon": {
         "type": "shop-amazon",
         "settings": {
+          "show": true,
           "link_text": "Now Available On Amazon",
           "page_link": ""
         }
