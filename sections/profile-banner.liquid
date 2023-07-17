@@ -1,19 +1,27 @@
-<div class="profile_banner">
-  <div class="row">
-    <div class="profile_image" style="background: url('{{ section.settings.banner | img_url: '2800x2800' }}') no-repeat">
-    </div>
-    <div class="profile_bio">
-      <h1>{{section.settings.title}}</h1>
-      <h2>{{section.settings.subtitle}}</h2>
-      <p>{{section.settings.bio}}</p>
-      <a href="{{section.settings.page_link}}">{{section.settings.link_text}}</a>
+{% if section.settings.show == true %}
+  <div class="profile_banner">
+    <div class="row">
+      <div class="profile_image" style="background: url('{{ section.settings.banner | img_url: '2800x2800' }}') no-repeat">
+      </div>
+      <div class="profile_bio">
+        <h1>{{section.settings.title}}</h1>
+        <h2>{{section.settings.subtitle}}</h2>
+        <p>{{section.settings.bio}}</p>
+        <a href="{{section.settings.page_link}}">{{section.settings.link_text}}</a>
+      </div>
     </div>
   </div>
-</div>
+{% endif %}
 {% schema %}
   {
     "name": "Profile Banner",
 	"settings": [
+      {
+        "type": "checkbox",
+        "id": "show",
+        "label": "Show",
+        "default": true  
+      },
       {
         "type": "image_picker",
         "id": "banner",
