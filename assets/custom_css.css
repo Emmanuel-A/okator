@@ -284,3 +284,6 @@ body.template-index p.new {
     max-width: 100%;
     margin-top: 10px;
 }
+.product-single__quantity .js-qty input {
+  font-style: normal;
+}
