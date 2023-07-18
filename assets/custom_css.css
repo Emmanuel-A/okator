@@ -287,6 +287,10 @@ body.template-index p.new {
 .product-single__quantity .js-qty input {
     font-style: normal;
 }
+.product-single__quantity .js-qty__adjust--minus, .product-single__quantity .js-qty__adjust--plus {
+    background-color: #000000;
+    color: #ffffff;
+}
 .product-single__quantity .js-qty .js-qty__adjust:hover {
     background-color: #000000;
     color: #ffffff;
