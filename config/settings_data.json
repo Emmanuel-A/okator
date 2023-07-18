@@ -203,7 +203,12 @@
               "title": "Don't risk damaging your clothes from makeup stains",
               "subtitle": "",
               "btn_text": "Discover The Oveil",
-              "btn_link": "shopify:\/\/products\/oveil"
+              "btn_link": "shopify:\/\/products\/oveil",
+              "banner_wholesale": "shopify:\/\/shop_images\/342952160001_4499296796001_4499296086001-vs.jpg",
+              "title_wholesale": "Bold, Confident, Genuine, Extraordinary",
+              "subtitle_wholesale": "On-the-go glow in 30 seconds like.",
+              "btn_text_wholesale": "Show Me More",
+              "btn_link_wholesale": ""
             }
           }
         },
@@ -211,7 +216,8 @@
           "1599696615198"
         ],
         "settings": {
-          "show": true
+          "show": true,
+          "show-wholesale": true
         }
       },
       "blog-posts": {
