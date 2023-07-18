@@ -269,12 +269,14 @@ body.template-index p.new {
     position: sticky;
     top: 150px;
 }
-.product-single__quantity .js-quantity-selector {
-  
+.product-single__quantity{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .product-single__quantity .js-quantity-selector .js-qty {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
 }
