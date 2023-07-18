@@ -90,6 +90,10 @@ body#disposable-makeup-covers .product-single__meta--wrapper {
     top: 0;
     padding: 0;
   }
+    .grid.product-single .product-single__meta {
+    position: sticky;
+    top: 150px;
+  }
 }
 
 @media screen and (min-width: 591px){
@@ -258,9 +262,4 @@ body.template-index p.new {
 
 #seal-login-helper {
     display: none;
-}
-
-.product-single__meta {
-  position: sticky;
-  top: 150px;
 }
