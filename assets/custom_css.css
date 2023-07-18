@@ -2,6 +2,11 @@
   display: none;
 }
 
+.product-single .product-single__meta {
+  position: sticky;
+  top: 150px;
+}
+
 .row.additional-product-info {
     display: flex;
     column-gap: 10px;
