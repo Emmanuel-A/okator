@@ -11,6 +11,21 @@
     {% endfor %}
   </div>
 {% endif %}
+
+{% if customer.tags contains 'wholesale' and section.settings.show_wholesale == true%}
+   <div class="home_banner">
+    {% for block in section.blocks %}
+    <a href="{{block.settings.btn_link_wholesale}}">
+      <div class="" style="background: url({{ block.settings.banner_wholesale | img_url: '2800x2800' }}) no-repeat">
+        <h1>{{block.settings.title_wholesale}}</h1>
+        <h2>{{block.settings.subtitle_wholesale}}</h2>
+        <button class="banner_btn">{{block.settings.btn_text_wholesale}}</button>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+{% endif %}
+
 {% schema %}
   {
     "name": "Home Banner",
