@@ -260,7 +260,7 @@ body.template-index p.new {
     display: none;
 }
 
-.product-single .product-single__meta {
+.product-single__meta {
   position: sticky;
   top: 150px;
 }
