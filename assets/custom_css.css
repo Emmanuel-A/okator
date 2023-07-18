@@ -269,7 +269,7 @@ body.template-index p.new {
     position: sticky;
     top: 150px;
 }
-.product-single__quantity{
+.product-single__quantity {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
