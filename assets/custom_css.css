@@ -285,5 +285,9 @@ body.template-index p.new {
     margin-top: 10px;
 }
 .product-single__quantity .js-qty input {
-  font-style: normal;
+    font-style: normal;
+}
+.product-single__quantity .js-qty input[type=text] {
+    border: 1px solid #000000;
+    background-color: #ffffff;
 }
