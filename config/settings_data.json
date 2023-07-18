@@ -81,7 +81,7 @@
           "show_announcement": true,
           "home_page_only": false,
           "text": "",
-          "link": "shopify:\/\/products\/oveil-old",
+          "link": "shopify:\/\/products\/oveill",
           "color_bg": "#000000",
           "color_text": "#ffffff"
         }
@@ -203,7 +203,7 @@
               "title": "Don't risk damaging your clothes from makeup stains",
               "subtitle": "",
               "btn_text": "Discover The Oveil",
-              "btn_link": "shopify:\/\/products\/oveil-old"
+              "btn_link": "shopify:\/\/products\/oveill"
             }
           }
         },
