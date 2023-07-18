@@ -34,21 +34,12 @@
 
 
 
-{% if customer.tags contains 'wholesale' %}
-  {% section 'home-banner-wholesale' %}
-  {% section 'oveil-instructions-wholesale' %}
-  {% section 'product-reviews-wholesale' %}
-  {% section 'product-videos-wholesale' %}
-  {% section 'shop-amazon-wholesale' %}
-  {% section 'blog-posts-wholesale' %}
-  {% section 'profile-banner-wholesale' %}
-{% else  %}
-  {% section 'home-banner' %}
-  {% section 'oveil-instructions' %}
-  {% section 'product-reviews' %}
-  {% section 'product-videos' %}
-  {% section 'shop-amazon' %}
-  {% section 'blog-posts' %}
-  {% section 'profile-banner' %}
-{% endif  %}
+
+{% section 'home-banner' %}
+{% section 'oveil-instructions' %}
+{% section 'product-reviews' %}
+{% section 'product-videos' %}
+{% section 'shop-amazon' %}
+{% section 'blog-posts' %}
+{% section 'profile-banner' %}
 
