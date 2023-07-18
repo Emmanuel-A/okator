@@ -276,6 +276,9 @@ body.template-index p.new {
     flex-direction: column;
     align-items: center;
 }
+.product-single__quantity label {
+  font-style: normal;
+}
 .product-single__quantity .js-qty {
     width: 100%;
     max-width: 100%;
