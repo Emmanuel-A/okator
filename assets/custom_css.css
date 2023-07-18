@@ -276,7 +276,7 @@ body.template-index p.new {
     flex-direction: column;
     align-items: center;
 }
-.product-single__quantity .js-quantity-selector .js-qty {
+.product-single__quantity .js-qty {
     width: 100%;
     max-width: 100%;
     margin-top: 10px;
