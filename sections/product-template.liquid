@@ -361,10 +361,17 @@
                 {% endfor %}
               </select>
 
+            {% if customer.tags contains 'wholesale' %}
               <div class="product-single__quantity">
                 <label for="Quantity" class="product-single__quantity-label js-quantity-selector">{{ 'products.product.quantity' | t }}</label>
-                <input type="number" hidden="hidden" id="Quantity" name="quantity" {% if customer.tags contains 'wholesale' %} value="5" min="5" {% else %} value="1" min="1" {% endif %} class="js-quantity-selector">
+                <input type="number" hidden="hidden" id="Quantity" name="quantity" value="5" min="5" class="js-quantity-selector">
               </div>
+            {% else %}
+              <div class="product-single__quantity">
+                <label for="Quantity" class="product-single__quantity-label js-quantity-selector">{{ 'products.product.quantity' | t }}</label>
+                <input type="number" hidden="hidden" id="Quantity" name="quantity" value="1" min="1" class="js-quantity-selector">
+              </div>
+            {% endif %} 
 
               <div class="product-single__add-to-cart{% if section.settings.add_to_cart_button_size == 'large' %} product-single__add-to-cart--full-width{% endif %}">
                 <button type="submit" name="add" id="AddToCart--{{ section.id }}" class="btn btn--add-to-cart{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}"{% unless current_variant.available %} disabled="disabled"{% endunless %}>
