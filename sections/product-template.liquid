@@ -363,7 +363,7 @@
 
               <div class="product-single__quantity">
                 <label for="Quantity" class="product-single__quantity-label js-quantity-selector">{{ 'products.product.quantity' | t }}</label>
-                <input type="number" hidden="hidden" id="Quantity" name="quantity" value="1" min="1" class="js-quantity-selector">
+                <input type="number" hidden="hidden" id="Quantity" name="quantity" {% if customer.tags contains 'wholesale' %} value="5" min="5" {% else %} value="1" min="1" {% endif %} class="js-quantity-selector">
               </div>
 
               <div class="product-single__add-to-cart{% if section.settings.add_to_cart_button_size == 'large' %} product-single__add-to-cart--full-width{% endif %}">
