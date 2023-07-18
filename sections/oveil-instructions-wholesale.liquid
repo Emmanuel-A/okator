@@ -1,12 +1,51 @@
+{% if section.settings.show == true %}
+<div class="instructions">
+  <p class="heading">{{ section.settings.heading }}</p>
+  <div class="posts_wrapper">
+    {% for block in section.blocks %}
+      <div class="block">
+        <img class="" src="{{ block.settings.image | img_url: '2800x2800' }}">
+          <p>{{block.settings.preview}}</p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{%  endif %}
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Oveil Instruct Wholesale",
+	"settings": [
+      {
+        "type": "checkbox",
+        "id": "show",
+        "label": "Show Section",
+        "default": true  
+      },
+      {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Virgil Abloh, Adut Akech, Janet Mock, and More"
+      }
+	],
+    "blocks": [
+      {
+        "type": "post",
+        "name": "Posts",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+		  {
+            "type": "text",
+            "id": "preview",
+            "label": "Instruction",
+			"default": "Lorem ipsum"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
