@@ -2,10 +2,6 @@
   display: none;
 }
 
-.product-single .product-single__meta {
-  position: sticky;
-  top: 150px;
-}
 
 .row.additional-product-info {
     display: flex;
@@ -260,6 +256,11 @@ body.template-index p.new {
   visibility: hidden;
 }
 
-  #seal-login-helper {
+#seal-login-helper {
     display: none;
+}
+
+.product-single .product-single__meta {
+  position: sticky;
+  top: 150px;
 }
