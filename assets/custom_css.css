@@ -90,7 +90,7 @@ body#disposable-makeup-covers .product-single__meta--wrapper {
     top: 0;
     padding: 0;
   }
-    .grid.product-single .product-single__meta {
+  .grid.product-single .product-single__meta {
     position: sticky;
     top: 150px;
   }
