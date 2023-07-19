@@ -147,6 +147,11 @@
               <ul class="nav">
                 {% if customer %}
                   <li class="shop_link">
+                    <a href="/account">
+                      Account
+                    </a>
+                  </li>
+                  <li class="shop_link">
                     {{ 'Log out' | customer_logout_link }}
                   </li>
                 {% else %}
