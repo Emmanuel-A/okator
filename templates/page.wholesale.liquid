@@ -2,6 +2,14 @@
 
 <!-- /templates/page.liquid -->
 {% if customer.tags contains 'wholesale' %}
+  {% section 'home-banner-wholesale' %}
+  {% section 'oveil-instructions-wholesale' %}
+  {% section 'product-reviews-wholesale' %}
+  {% section 'product-videos-wholesale' %}
+  {% section 'shop-amazon-wholesale' %}
+  {% section 'blog-posts-wholesale' %}
+  {% section 'profile-banner-wholesale' %}
+{% else %}
 <div class="grid">
   <div class="grid__item large--five-sixths push--large--one-twelfth">
 
@@ -128,12 +136,4 @@
     </div>
   </div>
 </div>
-{% else %}
-  {% section 'home-banner-wholesale' %}
-  {% section 'oveil-instructions-wholesale' %}
-  {% section 'product-reviews-wholesale' %}
-  {% section 'product-videos-wholesale' %}
-  {% section 'shop-amazon-wholesale' %}
-  {% section 'blog-posts-wholesale' %}
-  {% section 'profile-banner-wholesale' %}
 {% endif %}
