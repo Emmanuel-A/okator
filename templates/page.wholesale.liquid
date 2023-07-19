@@ -1,6 +1,7 @@
 <div class="preloader"></div>
 
 <!-- /templates/page.liquid -->
+{% if customer.tags contains 'wholesale' %}
 <div class="grid">
   <div class="grid__item large--five-sixths push--large--one-twelfth">
 
@@ -127,12 +128,12 @@
     </div>
   </div>
 </div>
-
-
-{% section 'home-banner-wholesale' %}
-{% section 'oveil-instructions-wholesale' %}
-{% section 'product-reviews-wholesale' %}
-{% section 'product-videos-wholesale' %}
-{% section 'shop-amazon-wholesale' %}
-{% section 'blog-posts-wholesale' %}
-{% section 'profile-banner-wholesale' %}
+{% else %}
+  {% section 'home-banner-wholesale' %}
+  {% section 'oveil-instructions-wholesale' %}
+  {% section 'product-reviews-wholesale' %}
+  {% section 'product-videos-wholesale' %}
+  {% section 'shop-amazon-wholesale' %}
+  {% section 'blog-posts-wholesale' %}
+  {% section 'profile-banner-wholesale' %}
+{% endif %}
