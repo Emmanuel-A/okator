@@ -505,8 +505,8 @@
         "type": "shop-amazon",
         "settings": {
           "show": true,
-          "link_text": "Now Available On Amazon",
-          "page_link": ""
+          "link_text": "apply for wholesale",
+          "page_link": "https:\/\/forms.gle\/49rGPpj3a4DpVWDe6"
         }
       }
     },
