@@ -210,24 +210,10 @@
               "btn_text_wholesale": "Show Me More",
               "btn_link_wholesale": ""
             }
-          },
-          "c1edfe3c-34dc-47af-81aa-0f84fd012e3f": {
-            "type": "banner",
-            "settings": {
-              "title": "Bold, Confident, Genuine, Extraordinary",
-              "subtitle": "On-the-go glow in 30 seconds like.",
-              "btn_text": "Show Me More",
-              "btn_link": "",
-              "title_wholesale": "Bold, Confident, Genuine, Extraordinary",
-              "subtitle_wholesale": "On-the-go glow in 30 seconds like.",
-              "btn_text_wholesale": "Show Me More",
-              "btn_link_wholesale": ""
-            }
           }
         },
         "block_order": [
-          "1599696615198",
-          "c1edfe3c-34dc-47af-81aa-0f84fd012e3f"
+          "1599696615198"
         ],
         "settings": {
           "show": true,
