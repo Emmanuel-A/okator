@@ -200,11 +200,24 @@
             "type": "banner",
             "settings": {
               "banner": "shopify:\/\/shop_images\/background_005.jpg",
-              "title": "Don't risk damaging your clothes from makeup stains",
+              "title": "Protect your clothes from makeup stains",
               "subtitle": "",
               "btn_text": "Discover The Oveil",
               "btn_link": "shopify:\/\/products\/oveil",
               "banner_wholesale": "shopify:\/\/shop_images\/342952160001_4499296796001_4499296086001-vs.jpg",
+              "title_wholesale": "WE'RE GROWING!",
+              "subtitle_wholesale": "The Oveil is now available in New York exclusively at Manhattan Wardrobe Supply",
+              "btn_text_wholesale": "Show Me More",
+              "btn_link_wholesale": ""
+            }
+          },
+          "c1edfe3c-34dc-47af-81aa-0f84fd012e3f": {
+            "type": "banner",
+            "settings": {
+              "title": "Bold, Confident, Genuine, Extraordinary",
+              "subtitle": "On-the-go glow in 30 seconds like.",
+              "btn_text": "Show Me More",
+              "btn_link": "",
               "title_wholesale": "Bold, Confident, Genuine, Extraordinary",
               "subtitle_wholesale": "On-the-go glow in 30 seconds like.",
               "btn_text_wholesale": "Show Me More",
@@ -213,7 +226,8 @@
           }
         },
         "block_order": [
-          "1599696615198"
+          "1599696615198",
+          "c1edfe3c-34dc-47af-81aa-0f84fd012e3f"
         ],
         "settings": {
           "show": true,
