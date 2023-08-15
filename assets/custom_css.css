@@ -300,3 +300,7 @@ body.template-index p.new {
     border: 1px solid #000000;
     background-color: #ffffff;
 }
+
+.hc-product-summary__text {
+    margin-left: 10px;
+}
