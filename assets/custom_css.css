@@ -352,4 +352,5 @@ body.template-index p.new {
 
 .wholesale-login form#customer_login p {
     text-align: center;
+    cursor: pointer;
 }
