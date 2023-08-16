@@ -4039,7 +4039,11 @@ function showPassword(event) {
 
 
 
-
+ if (document.querySelector('.create_wholesale_account')) {
+    document.querySelector('.create_wholesale_account').addEventListener('click', () => {
+        document.querySelector('.wholesale-login').classList.add('hide');
+    })
+}
 
 
 
