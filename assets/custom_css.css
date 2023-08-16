@@ -349,3 +349,7 @@ body.template-index p.new {
     font-size: 14px;
     margin: 0 0 20px 0;
 }
+
+.wholesale-login form#customer_login p {
+    text-align: center;
+}
