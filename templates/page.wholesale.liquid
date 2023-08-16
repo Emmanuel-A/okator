@@ -29,10 +29,10 @@
     {{ form.errors | default_errors }}
   
     <div>
-      <label for="customerEmail">Email Address</label>
       <input type="email"
         name="customer[email]"
         id="customerEmail"
+        placeholder="Email"
         autocorrect="off"
         autocapitalize="off"
         autocomplete="email">
@@ -41,6 +41,7 @@
       <label for="customerPassword">Password</label>
       <input type="password"
         name="customer[password]"
+        placeholeder="Password"
         id="customerPassword">
     </div>
   
