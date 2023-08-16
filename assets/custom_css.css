@@ -329,6 +329,15 @@ body.template-index p.new {
     margin: 20px 0;
 }
 
+.wholesale-login form#customer_login input[type="email"], .wholesale-login form#customer_login input[type="password"] {
+    font-size: 14px;
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    border-bottom: 1px solid #000000;
+    background-color: transparent;
+    padding: 0 0 5px;
+}
+
 .wholesale-login form#customer_login input[type="submit"] {
     width: 100%;
     background-color: #000000;
