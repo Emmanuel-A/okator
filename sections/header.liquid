@@ -174,13 +174,20 @@
             </div>
           </div>   
              
-        
           <div class="row mobile_nav">
-            <div class="logo">
-              <a href="/" title="OKATOR">
-                  {% include 'icon_okator_logo_svg' %}
-              </a>
-            </div>
+            {% if customer.tags contains 'Wholesale' %}   
+              <div class="logo">
+                <a href="/" title="Oveil Wholesale">
+                  Wholesale
+                </a>
+              </div>
+            {% else %}
+              <div class="logo">
+                <a href="/" title="OKATOR">
+                    {% include 'icon_okator_logo_svg' %}
+                </a>
+              </div>
+            {% endif %}
             <div class="btn_wraps">
               <ul class="nav">
                 <li class="shop_link">
