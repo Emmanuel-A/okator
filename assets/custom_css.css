@@ -304,3 +304,16 @@ body.template-index p.new {
 .hc-product-summary__text {
     margin-left: 10px;
 }
+
+.wholesale-login {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
