@@ -317,3 +317,10 @@ body.template-index p.new {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.wholesale-login form#customer_login div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
+}
