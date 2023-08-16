@@ -174,7 +174,7 @@
             </div>
           </div>   
              
-          <div class="row mobile_nav">
+          <div class="row mobile_nav {% if customer.tags contains 'Wholesale' %} wholesale_mobile_nav {% endif %}">
             {% if customer.tags contains 'Wholesale' %}   
               <div class="logo">
                 <a href="/" title="Oveil Wholesale">
