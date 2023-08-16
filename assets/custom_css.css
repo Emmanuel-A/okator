@@ -318,6 +318,10 @@ body.template-index p.new {
     flex-wrap: wrap;
 }
 
+.wholesale-login.hide {
+  display: none;
+}
+
 .wholesale-login form#customer_login {
     width: 290px;
 }
