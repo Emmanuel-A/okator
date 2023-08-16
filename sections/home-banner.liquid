@@ -1,4 +1,4 @@
-{% if customer.tags contains 'Wholesale' %}   
+{% if customer.tags contains 'Wholesale' or 'wholesale' %}   
    <div class="home_banner">
     {% for block in section.blocks %}
     <a href="{{block.settings.btn_link_wholesale}}">
@@ -10,7 +10,6 @@
     </a>
     {% endfor %}
   </div>
-  fghfgfhjkglkjhljkhlgkfgddfhdkhjt;l;u;ioyhyfjfdsetstyg;ih;lij
 {% else %}
   <div class="home_banner">
     {% for block in section.blocks %}
