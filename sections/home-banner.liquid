@@ -17,7 +17,10 @@
       <div class="" style="background: url({{ block.settings.banner | img_url: '2800x2800' }}) no-repeat">
         <h1>{{block.settings.title}}</h1>
         <h2>{{block.settings.subtitle}}</h2>
-        <button class="banner_btn">{{block.settings.btn_text}}</button>
+        {% if customer.tags contains 'Wholesale' or 'wholesale' %} 
+        {% else %}
+          <button class="banner_btn">{{block.settings.btn_text}}</button>
+        {% endif %}
       </div>
     </a>
     {% endfor %}
